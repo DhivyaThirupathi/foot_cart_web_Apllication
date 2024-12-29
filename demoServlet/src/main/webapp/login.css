@@ -1,0 +1,68 @@
+@charset "UTF-8";
+General styles
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !important ;
+    font-style: normal;
+}
+
+body {
+    background: url('wp11235135-desktop-gym-wallpapers.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+form{
+    width: 70% !important;
+    background: linear-gradient(to right, rgba(44, 44, 44, 0.9), rgba(95, 95, 95, 0.9));
+    padding: 30px !important;
+    border-radius: 20px !important;
+    margin-top: 150px !important;
+}
+
+
+/* Form elements */
+
+.login-field label{
+    color: rgb(141, 141, 141) !important;
+}
+
+.login-field button{
+    background-color: darkgray !important;
+    width: 50% !important;
+    border-color: black !important;
+}
+
+.login-field input:focus {
+    background-color: lightgray;
+}
+
+.login-field button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.form-text, .form-check-label {
+    font-size: 0.9rem;
+}
+
+.register i{
+    color: white !important;
+}
+
+.heading h2{
+    color: rgb(141, 141, 141) !important;
+    text-decoration: underline !important ;
+}
+
+@media only screen and (max-width:600px){
+    form{
+        width: 320px !important;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Options</title>
+</head>
+<body>
+
+    <div class="card-container">
+    <style>
+    /* General body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('https://ik.imagekit.io/mt9egd3uc/dg.avif?') no-repeat center center/cover;
+    }
+
+    /* Card Container in Horizontal Layout */
+    .card-container {
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 40px; /* Added gap between the two cards */
+    }
+
+    /* Individual Card Styling */
+    .card {
+        background-color: #ffffff;
+        padding: 20px; /* Increased padding */
+        border-radius: 12px;
+        width: 320px; /* Increased card width */
+        height: 220px; /* Increased card height */
+        text-align: center;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden; /* Ensures border doesn't get cut off */
+        border: 2px solid orange; /* Orange border */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth animation */
+    }
+
+    /* Card Hover Animation */
+    .card:hover {
+        transform: translateY(-10px) scale(1.05); /* Slightly lift the card and scale it */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deepen the shadow */
+    }
+
+    /* Styling for image in the card */
+    .card img {
+        width: 100px; /* Increased image size */
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px; /* Increased space between image and text */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    /* Image Hover Animation */
+    .card img:hover {
+        transform: scale(1.1); /* Slightly enlarge the image on hover */
+    }
+
+    /* Heading Styling inside Card */
+    .card h3 {
+        color: #FFA500; /* Orange color for heading */
+        margin: 0;
+        font-weight: bold; /* Bold font */
+    }
+
+    /* Link Styling inside Card */
+    .card a {
+        text-decoration: none;
+        display: block;
+        padding: 12px 24px; /* Increased padding for button */
+        font-size: 18px; /* Larger font size */
+        color: #fff;
+        background-color: #FF9800; /* Slightly darker orange background */
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        width: 80%; /* Wider buttons for larger cards */
+        max-width: 220px; /* Slightly wider button */
+        height: 50px; /* Taller button height */
+        margin-top: 15px; /* Increased space between button and text */
+        line-height: 50px; /* Centering text vertically */
+        text-align: center; /* Centering text horizontally */
+    }
+
+    /* Hover effect for link inside the card */
+    .card a:hover {
+        background-color: #FF8F00; /* Darker orange hover effect */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+    </style>
+    
+        <!-- Admin Login Card -->
+        <div class="card">
+            <img src="https://ik.imagekit.io/zwq8uei9d/Login-page-character1.png?updatedAt=1735261633271" alt="Admin Icon"> <!-- Replace with your admin icon -->
+            <a href="adminLogin.jsp">Admin Login</a>
+        </div>
+
+        <!-- User Login Card -->
+        <div class="card">
+            <img src="https://ik.imagekit.io/zwq8uei9d/5087579.png?updatedAt=1735261678663" alt="User Icon"> <!-- Replace with your user icon -->
+            <a href="login.jsp"> User Login</a>
+        </div>
+    </div>
+
+</body>
+</html>
